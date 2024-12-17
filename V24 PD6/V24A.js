@@ -23011,4 +23011,17 @@ let data = [
 ];
 //1 print each card where the series set is "HeartGold & SoulSilver"
 
+function series(data) {
+  const x = data.filter((card) =>
+    card.set.series == ("HeartGold & SoulSilver")
+  );
+  console.log(x);
+}
+series(data); 
 //2 print each card name where the card type "includes" Fire
+
+function include(data) {
+  const x = data.filter((card) => card.types.includes("Fire"));
+  console.log(x.name);
+}
+include(data);
